@@ -1,0 +1,47 @@
+{
+ "browser": "Chromium 153.0.8010.12 headless shell (Playwright 1.63)",
+ "pools": {
+  "pool-a": {
+   "extra_chromium_args": [],
+   "robots": [
+    "r01",
+    "r02",
+    "r03",
+    "r04"
+   ]
+  },
+  "pool-b": {
+   "extra_chromium_args": [
+    "--enable-features=CookieSameSiteConsidersRedirectChain,ShortLaxAllowUnsafeThreshold"
+   ],
+   "robots": [
+    "r05",
+    "r06",
+    "r07",
+    "r08"
+   ]
+  },
+  "pool-c": {
+   "extra_chromium_args": [
+    "--enable-features=EnableSchemeBoundCookies,TimeLimitedInsecureCookies,SameSiteDefaultChecksMethodRigorously"
+   ],
+   "robots": [
+    "r09",
+    "r10",
+    "r11",
+    "r12"
+   ]
+  },
+  "pool-d": {
+   "extra_chromium_args": [
+    "--enable-features=EnablePortBoundCookies,EnableSchemeBoundCookies,CookieSameSiteConsidersRedirectChain,ShortLaxAllowUnsafeThreshold"
+   ],
+   "robots": [
+    "r13",
+    "r14",
+    "r15",
+    "r16"
+   ]
+  }
+ }
+}
